@@ -10,7 +10,6 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import com.artuur.todolist.entity.Todo;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.ANY)
 class TodolistApplicationTests {
 
 	@Autowired

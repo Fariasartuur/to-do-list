@@ -13,8 +13,7 @@ Ela permite criar, listar, atualizar e excluir tarefas, armazenando os dados em 
 | Spring Boot | Framework principal |
 | Spring Web | Criação de API REST |
 | Spring Data JPA | Persistência com ORM |
-| MySQL | Banco de dados principal |
-| H2 Database | Utilizado em testes |
+| SQLite | Banco de dados local |
 | Spring Validation | Validação de dados de entrada |
 | Spring Boot Actuator | Monitoramento da aplicação |
 | WebTestClient | Testes Web (WebFlux para testes) |
@@ -39,16 +38,8 @@ src/
 
 ## 🗄️ Banco de Dados
 
-### Para rodar com MySQL, configure no `application.properties`:
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/todolist
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-spring.jpa.hibernate.ddl-auto=update
-```
+Nenhuma instalação externa é necessária.  
+O banco será criado automaticamente na pasta do projeto usando SQLite.
 
 ---
 
